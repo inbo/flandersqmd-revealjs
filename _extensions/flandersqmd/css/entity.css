@@ -1,0 +1,39 @@
+.trapezium {
+  background: var(--flandersqmd-level1-trapezium);
+}
+
+.reveal h1 {
+  color: var(--flandersqmd-level1-colour);
+}
+
+.reveal h2 {
+  color: var(--flandersqmd-level2-colour);
+}
+
+.reveal .title {
+  color: var(--flandersqmd-title-colour);
+}
+
+.sidebar {
+  background-color: var(--flandersqmd-sidebar-bg);
+}
+
+.sidebar-tussen {
+  background-color: var(--flandersqmd-level1-bg);
+}
+
+.sidebar-url {
+  color: var(--flandersqmd-sidebar-colour);
+}
+
+.sidebar-url-tussen {
+  color: var(--flandersqmd-sidebar-tussen-colour);
+}
+
+.title-logo {
+  background-color: var(--flandersqmd-title-border);
+}
+
+.title-entity {
+  color: var(--flandersqmd-title-border);
+}
