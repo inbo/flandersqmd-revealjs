@@ -21,6 +21,7 @@ libs
 output
 renv/library
 /.quarto/
+/*.csl
 /*.css
 /*.jpg
 /*.png

@@ -22,10 +22,12 @@ contributes:
       output-file: index.html
       df-print: kable
       progress: true
+      csl: research-institute-for-nature-and-forest.csl
       template: partials/template.html
       template-partials:
         - partials/title-slide.html
       format-resources:
+        - research-institute-for-nature-and-forest.csl
         - css/entity.css
         - fonts/FlandersArtSans-Bold.ttf
         - fonts/FlandersArtSans-Light.ttf

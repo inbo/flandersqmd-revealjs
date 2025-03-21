@@ -12,6 +12,8 @@ project:
 lang: en-GB
 #lang: nl-BE
 
+bibliography: inbomd.bib
+
 flandersqmd:
   level: 2
   entity: INBO
