@@ -37,3 +37,11 @@
 .title-entity {
   color: var(--flandersqmd-title-border);
 }
+
+caption {
+  color: var(--flandersqmd-level2-colour);
+}
+
+figcaption {
+  color: var(--flandersqmd-level2-colour);
+}

@@ -1,5 +1,8 @@
 ```{r setup, include = FALSE}
+library(INBOtheme)
+library(knitr)
 library(lipsum)
+library(ggplot2)
 ```
 
 # Separator slide heading 1 extra text a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9
@@ -151,3 +154,64 @@ fixed width font:
 
   - Item 3
 - The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+# Static tables and figures
+
+## Manual table
+
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+: Optional table caption
+
+## Static table from R data frame
+
+```{r mtcars}
+kable(head(mtcars[, 1:4], 7), align = c("r", "c", "r", "l"))
+```
+
+## Static table from R data frame with numbered caption
+
+- chunk name must have `tbl-` prefix 
+- use `tbl-cap:` to specify the table caption
+
+```{r tbl-mtcars}
+#| tbl-cap: Optional table caption
+kable(head(mtcars[, 1:4], 3), align = c("r", "c", "r", "l"))
+```
+
+## Static table from R data frame with unnumbered caption
+
+- use `tbl-cap:` to specify the table caption
+
+```{r}
+#| tbl-cap: Optional table caption
+kable(head(mtcars[, 1:4], 3), align = c("r", "c", "r", "l"))
+```
+
+## Manual figure
+
+![Figure caption](pexels-pixabay-355887.jpg){height=80%}
+
+## Static figure from R
+
+```{r}
+ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
+```
+
+## Static figure from R with caption
+
+```{r}
+#| fig-cap: Optional figure caption
+ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
+```
+
+## Static figure from R with caption
+
+```{r fig-mtcars}
+#| fig-cap: Optional figure caption
+ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
+```

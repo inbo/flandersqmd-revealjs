@@ -9,8 +9,8 @@ project:
     - "!README.md" #ignore README.md
   output-dir: output
 
-#lang: en-GB
-lang: nl-BE
+lang: en-GB
+#lang: nl-BE
 
 flandersqmd:
   level: 2
