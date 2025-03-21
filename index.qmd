@@ -1,8 +1,11 @@
 ```{r setup, include = FALSE}
+library(DT)
+library(ggplot2)
 library(INBOtheme)
 library(knitr)
+library(leaflet)
 library(lipsum)
-library(ggplot2)
+library(plotly)
 ```
 
 # Separator slide heading 1 extra text a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9
@@ -215,6 +218,48 @@ ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
 #| fig-cap: Optional figure caption
 ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
 ```
+
+# Interactive tables and figures
+
+## Interactive table {transition="none"}
+
+```{r dt}
+datatable(
+  mtcars[, 1:6], caption = "Optional table caption",
+  options = list(pageLength = 5, dom = "ftp")
+)
+```
+
+## Interactive figure {transition="none"}
+
+```{r fig-plotly}
+#| fig-cap: Optional figure caption
+ggplotly(ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point())
+```
+
+## Plotly figure and transition {transition="none"}
+
+- The `revealjs` interacts with `plotly` figures by rescaling them when going back and forth between slides
+- Options to fix that
+    1. Workaround: refresh the page (F5) to display the `plotly` figure in the correct size
+    1. Use the `transition="none"` option to `plolty` slide and the slide before and after
+    1. Set `transition: none` as default transition in `_quarto.yml`
+    
+```
+format:
+  flandersqmd-revealjs:
+    transition: none
+```
+
+## Interactive map
+
+```{r fig-leaflet}
+#| fig-cap: Optional caption
+leaflet() |>
+  addTiles() |>
+  setView(lng = 3.8804, lat = 50.7635, zoom = 18)
+```
+
 
 # Mathematical formulas
 
