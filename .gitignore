@@ -20,3 +20,9 @@ docs
 libs
 output
 renv/library
+/.quarto/
+/*.css
+/*.jpg
+/*.png
+/*.scss
+/*.ttf

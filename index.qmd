@@ -1,0 +1,153 @@
+```{r setup, include = FALSE}
+library(lipsum)
+```
+
+# Separator slide heading 1 extra text a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9
+
+## Slide title extra text a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 
+
+- The text box will automatically shrink when the slide title requires more lines
+- The text is vertically centred within the text box
+- In case the title of heading 1 is too long, the first part of the title will disappear
+
+## Slide with too much text
+
+- The last part of the text will disappear if it doesn't fit the slide
+- The font size will not shrink to fit the text (like PowerPoint does)
+
+`r paragraph(1:2)`
+
+# Fonts 
+
+## Normal font
+
+`r paragraph()`
+
+## Italic font
+
+_`r paragraph()`_
+
+## Bold font
+
+**`r paragraph()`**
+
+## Bold and italic font
+
+**_`r paragraph()`_**
+
+## Fixed width font
+
+```{r fixed-width, echo = FALSE, results = "asis"}
+cat("`", paragraph(), "`", sep = "")
+```
+
+## Available number of characters per line
+
+About 69 characters with normal font
+
+12345678911234567892123456789312345678941234567895123456789612345678971234567898
+
+_12345678911234567892123456789312345678941234567895123456789612345678971234567898_
+
+About 62 characters with bold font
+
+**12345678911234567892123456789312345678941234567895123456789612345678971234567898**
+
+**_12345678911234567892123456789312345678941234567895123456789612345678971234567898_**
+
+62 characters with fixed width font
+
+`12345678911234567892123456789312345678941234567895123456789612345678971234567898`
+
+## Minuscule L versus capital i
+
+normal:
+  ~ lI <!-- spell-check: ignore -->
+
+bold:
+  ~ **lI** <!-- spell-check: ignore -->
+  
+italics:
+  ~ _lI_ <!-- spell-check: ignore -->
+  
+bold italics:
+  ~ **_lI_** <!-- spell-check: ignore -->
+
+fixed width font:
+  ~ `lI` <!-- spell-check: ignore -->
+
+## Special characters
+
+€$£ @&#§µ^ ()[]{}|²³<>/\*+- ,;:.?!~ äàáâã ëèéê ïìíî öòóô üùúû ÿ ç ñ ÄÀÁÂ ËÈÉÊ ÏÌÍÎ ÖÒÓÔ ÜÙÚÛ Ñ 0123456789 <!-- spell-check: ignore -->
+
+_€$£ @&#§µ^ ()[]{}|²³<>/\*+- ,;:.?!~ äàáâã ëèéê ïìíî öòóô üùúû ÿ ç ñ ÄÀÁÂ ËÈÉÊ ÏÌÍÎ ÖÒÓÔ ÜÙÚÛ Ñ 0123456789_ <!-- spell-check: ignore -->
+
+**€$£ @&#§µ^ ()[]{}|²³<>/\*+- ,;:.?!~ äàáâã ëèéê ïìíî öòóô üùúû ÿ ç ñ ÄÀÁÂ ËÈÉÊ ÏÌÍÎ ÖÒÓÔ ÜÙÚÛ Ñ 0123456789** <!-- spell-check: ignore -->
+
+**_€$£ @&#§µ^ ()[]{}|²³<>/\*+- ,;:.?!~ äàáâã ëèéê ïìíî öòóô üùúû ÿ ç ñ ÄÀÁÂ ËÈÉÊ ÏÌÍÎ ÖÒÓÔ ÜÙÚÛ Ñ 0123456789_** <!-- spell-check: ignore -->
+
+`€$£ @&#§µ^ ()[]{}|²³<>/\*+- ,;:.?!~ äàáâã ëèéê ïìíî öòóô üùúû ÿ ç ñ ÄÀÁÂ ËÈÉÊ ÏÌÍÎ ÖÒÓÔ ÜÙÚÛ Ñ 0123456789` <!-- spell-check: ignore -->
+
+## Quotation marks
+
+normal:
+  ~ "double", 'single'
+
+bold:
+  ~ **"double", 'single'**
+
+italics:
+  ~ _"double", 'single'_
+
+bold italics:
+  ~ **_"double", 'single'_**
+
+fixed width font:
+  ~ `"double", 'single',`
+
+# Lists
+
+## Unordered list
+
+- First level
+- The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+- Item 3
+    - Second level
+        - Third level
+        - The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+    - The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+
+## Ordered list
+
+1. First level
+1. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+1. Item 3
+    1. Second level
+        1. Third level
+        1. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+    1. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+## Incremental list
+
+::: {.incremental}
+- First level
+- The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+- Item 3
+    - Second level
+        - Third level
+        - The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+    - The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+:::
+
+## List with pauze
+
+- First level
+
+. . .
+
+- The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+. . .
+
+  - Item 3
+- The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.

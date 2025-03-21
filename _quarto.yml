@@ -1,0 +1,60 @@
+project:
+  preview:
+    port: 4201
+    browser: true
+  render:
+    - "*.md"
+    - "*.qmd"
+    - "!LICENSE.md" #ignore LICENSE.md
+    - "!README.md" #ignore README.md
+  output-dir: output
+
+#lang: en-GB
+lang: nl-BE
+
+flandersqmd:
+  level: 2
+  entity: INBO
+  title: "Example presentation using flandersqmd-revealjs"
+  subtitle: "Optional subtitle"
+  date: 2025-03-14
+  cover: pexels-pixabay-355887.jpg #Photo by Pixabay: https://www.pexels.com/photo/plants-under-starry-sky-355887/
+  author:
+    - name:
+        given: Given
+        family: Family
+      email: given.family@vlaanderen.be
+      corresponding: true
+      orcid: 0000-0002-1825-0097
+      affiliation:
+        - Government of Flanders
+    - name:
+        given: Second
+        family: Author
+      email: second.author@vlaanderen.be
+      corresponding: true
+      orcid: 0000-0002-1825-0097
+      affiliation:
+        - Government of Flanders
+    - name:
+        given: Third
+        family: Author
+      email: third.author@vlaanderen.be
+      orcid: 0000-0002-1825-0097
+      affiliation:
+        - Government of Flanders
+
+format:
+  flandersqmd-revealjs: default
+
+execute:
+  cache: false
+  freeze: false
+
+knitr:
+  opts_chunk:
+    echo: false
+    message: false
+    warning: false
+    fig-height: 5.7
+    fig-width: 12
