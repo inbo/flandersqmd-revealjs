@@ -215,3 +215,30 @@ ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
 #| fig-cap: Optional figure caption
 ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
 ```
+
+# Mathematical formulas
+
+## In-line formulas
+
+In-line formulas are intermixed with normal text, e.g. $P(y < Y|\theta) = \alpha$. This works best with simple formulas. Taller formulas will be reformatted to match the line height of the text, e.g. $\bar{X} = \sum_{i = 1}^NX_i$. Here, $i = 1$ and $N$ are placed besides $\sum$ instead of below and above. That trick doesn't hold with all formulas, e.g. fractions $\frac{X}{Y}$. In such case the font size is shrunk. Really tall formulas like $\frac{\sum_{i = 1}^NX_i}{\frac{\sum_{j = 1}^NY_j}{N}}$ will require an increased interline distance. Stand-alone formulas are therefore advisable.
+
+## Stand-alone formulas
+
+$$P(y < Y|\theta) = \alpha$$
+
+$$\bar{X} = \sum_{i = 1}^NX_i$$
+
+$$\frac{X}{Y}$$
+
+$$\frac{\sum_{i = 1}^NX_i}{\frac{\sum_{j = 1}^NY_i}{N}}$$
+
+## Numbered formulas
+
+<!-- spell-check: ignore:start -->
+$$\bar{X} = \sum_{i = 1}^NX_i $$ {#eq-som0}
+
+$$\frac{X}{Y} $$ {#eq-som}
+
+$$\frac{\sum_{i = 1}^NX_i}{\frac{\sum_{j = 1}^NY_j}{N}} $$ {#eq-som1}
+<!-- spell-check: ignore:end -->
+
