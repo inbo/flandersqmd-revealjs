@@ -99,67 +99,52 @@ end
 function levelcss (entity)
   local css
   css = ':root {'
+  css = css .. '  --flanders-white: #FFFFFF;'
   if (entity == "inbo") then
-    -- white
-    css = css .. '  --flandersqmd-level1-colour: #FFFFFF;'
-    -- fushia
-    css = css .. '  --flandersqmd-level1-trapezium: #C04384;'
-    -- fushia
-    css = css .. '  --flandersqmd-level2-colour: #C04384;'
-    -- fushia
-    css = css .. '  --flandersqmd-sidebar-bg: #C04384;'
-    -- white
-    css = css .. '  --flandersqmd-sidebar-colour: #FFFFFF;'
-    -- fushia
-    css = css .. '  --flandersqmd-sidebar-tussen-colour: #C04384;'
-    -- darkblue
-    css = css .. '  --flandersqmd-link-colour: #356196;'
-    -- black
-    css = css .. '  --r-main-color: #000000;'
-    -- black
-    css = css .. '  --quarto-hl-fu-color: #000000;'
-    -- gray
-    css = css .. '  --flandersqmd-footnote: #8E9DA7;'
-    -- fushia
-    css = css .. '  --flandersqmd-border: #C04384;'
-    -- blue
-    css = css .. ' --r-link-color: #356196;'
-    -- lightblue
-    css = css .. ' --r-link-color-hover: #BDDDD7;'
+    css = css .. '  --inbo-black: #000000;'
+    css = css .. '  --inbo-gray: #8E9DA7;'
+    css = css .. '  --inbo-fushia: #C04384;'
+    css = css .. '  --inbo-darkblue: #356196;'
+    css = css .. '  --inbo-lightblue: #BDDDD7;'
+
+    css = css .. '  --flandersqmd-level1-colour: var(--flanders-white);'
+    css = css .. '  --flandersqmd-level1-trapezium: var(--inbo-fushia);'
+    css = css .. '  --flandersqmd-level2-colour: var(--inbo-fushia);'
+    css = css .. '  --flandersqmd-sidebar-bg: var(--inbo-fushia);'
+    css = css .. '  --flandersqmd-sidebar-colour: var(--flanders-white);'
+    css = css .. '  --flandersqmd-sidebar-tussen-colour: var(--inbo-fushia);'
+    css = css .. '  --flandersqmd-link-colour: var(--inbo-darkblue);'
+    css = css .. '  --r-main-color: var(--inbo-black);'
+    css = css .. '  --quarto-hl-fu-color: var(--inbo-black);'
+    css = css .. '  --flandersqmd-footnote: var(--inbo-gray);'
+    css = css .. '  --flandersqmd-border: var(--inbo-fushia);'
+    css = css .. ' --r-link-color: var(--inbo-darkblue);'
+    css = css .. ' --r-link-color-hover: var(----inbo-lightblue);'
   else
-    -- canary yellow
-    css = css .. '  --flandersqmd-level1-trapezium: #FFED00;'
-    -- darkgray
-    css = css .. '  --flandersqmd-level1-colour: #3C3D3C;'
-    -- dark yellow
-    css = css .. '  --flandersqmd-level2-colour: #F0D70F;'
-    -- canary yellow
-    css = css .. '  --flandersqmd-sidebar-bg: #FFED00;'
-    -- darkgray
-    css = css .. '  --flandersqmd-sidebar-colour: #3C3D3C;'
-    -- darkgray
-    css = css .. '  --flandersqmd-sidebar-tussen-colour: #3C3D3C;'
-    -- darkblue
-    css = css .. '  --flandersqmd-link-colour: #215E9E;'
-    -- darkgray main color
-    css = css .. '  --r-main-color: #3C3D3C;'
-    -- darkgray code base color
-    css = css .. '  --quarto-hl-fu-color: #3C3D3C;'
-    -- gray
-    css = css .. '  --flandersqmd-footnote: #D5D5D5;'
-    -- dark yellow
-    css = css .. '  --flandersqmd-border: #F0D70F;'
-    -- dark blue
-    css = css .. ' --r-link-color: #15465B;'
-    -- light blue
-    css = css .. ' --r-link-color-hover: #32B2E9;'
+    css = css .. '  --flanders-canary-yellow: #FFED00;'
+    css = css .. '  --flanders-dark-yellow: #F0D70F;'
+    css = css .. '  --flanders-black: #3C3D3C;'
+    css = css .. '  --flanders-gray: #D5D5D5;'
+    css = css .. '  --flanders-dark-blue: #215E9E;'
+    css = css .. '  --flanders-light-blue: #32B2E9;'
+
+    css = css .. '  --flandersqmd-level1-trapezium: var(--flanders-canary-yellow);'
+    css = css .. '  --flandersqmd-level1-colour: var(--flanders-black);'
+    css = css .. '  --flandersqmd-level2-colour: var(--flanders-dark-yellow);'
+    css = css .. '  --flandersqmd-sidebar-bg: var(--flanders-canary-yellow);'
+    css = css .. '  --flandersqmd-sidebar-colour: var(--flanders-black);'
+    css = css .. '  --flandersqmd-sidebar-tussen-colour: var(--flanders-black);'
+    css = css .. '  --flandersqmd-link-colour: var(--flanders-dark-blue);'
+    css = css .. '  --r-main-color: var(--flanders-black);'
+    css = css .. '  --quarto-hl-fu-color: var(--flanders-black);'
+    css = css .. '  --flandersqmd-footnote: var(--flanders-gray);'
+    css = css .. '  --flandersqmd-border: var(--flanders-dark-yellow);'
+    css = css .. ' --r-link-color: var(--flanders-dark-blue);'
+    css = css .. ' --r-link-color-hover: var(--flanders-dark-blue);'
   end
-  -- white
-  css = css .. '  --flandersqmd-title-colour: #FFFFFF;'
-  -- white
-  css = css .. '  --flandersqmd-title-border: #FFFFFF;'
-  -- white
-  css = css .. '  --flandersqmd-level1-bg: #FFFFFF;'
+  css = css .. '  --flandersqmd-title-colour: var(--flanders-white);'
+  css = css .. '  --flandersqmd-title-border: var(--flanders-white);'
+  css = css .. '  --flandersqmd-level1-bg: var(--flanders-white);'
   css = css .. '}'
   return css
 end
