@@ -186,6 +186,33 @@ fixed width font:
 
 ::::
 
+## Callout
+
+::: {.callout-note}
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+::: {.callout-tip}
+## Tip with Title
+
+This is an example of a callout with a title.
+:::
+
+::: {.callout-caution}
+The quick brown fox jumps over the lazy dog.
+:::
+
+## Callout
+
+::: {.callout-warning}
+The quick brown fox jumps over the lazy dog.
+:::
+
+::: {.callout-important}
+The quick brown fox jumps over the lazy dog.
+:::
+
 ## Aside
 
 Slide content
