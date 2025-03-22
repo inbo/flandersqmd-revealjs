@@ -118,6 +118,14 @@ function levelcss (entity)
     css = css .. '  --r-main-color: #000000;'
     -- black
     css = css .. '  --quarto-hl-fu-color: #000000;'
+    -- gray
+    css = css .. '  --flandersqmd-footnote: #8E9DA7;'
+    -- fushia
+    css = css .. '  --flandersqmd-border: #C04384;'
+    -- blue
+    css = css .. ' --r-link-color: #356196;'
+    -- lightblue
+    css = css .. ' --r-link-color-hover: #BDDDD7;'
   else
     -- canary yellow
     css = css .. '  --flandersqmd-level1-trapezium: #FFED00;'
@@ -137,6 +145,14 @@ function levelcss (entity)
     css = css .. '  --r-main-color: #3C3D3C;'
     -- darkgray code base color
     css = css .. '  --quarto-hl-fu-color: #3C3D3C;'
+    -- gray
+    css = css .. '  --flandersqmd-footnote: #D5D5D5;'
+    -- dark yellow
+    css = css .. '  --flandersqmd-border: #F0D70F;'
+    -- dark blue
+    css = css .. ' --r-link-color: #15465B;'
+    -- light blue
+    css = css .. ' --r-link-color-hover: #32B2E9;'
   end
   -- white
   css = css .. '  --flandersqmd-title-colour: #FFFFFF;'

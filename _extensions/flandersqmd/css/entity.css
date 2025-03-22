@@ -45,3 +45,23 @@ caption {
 figcaption {
   color: var(--flandersqmd-level2-colour);
 }
+
+.reveal .slide aside, .reveal .slide div.aside {
+  color: var(--flandersqmd-footnote);
+}
+
+.panel-tabset [role=tablist] {
+  border-bottom-color: var(--flandersqmd-border);
+}
+
+.panel-tabset [role=tab] {
+  border-top-color: var(--flandersqmd-border);
+  border-left-color: var(--flandersqmd-border);
+  border-right-color: var(--flandersqmd-border);
+}
+
+.panel-tabset [role=tab][aria-selected=true] {
+  border-top-color: var(--flandersqmd-border);
+  border-left-color: var(--flandersqmd-border);
+  border-right-color: var(--flandersqmd-border);
+}

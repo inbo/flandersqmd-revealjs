@@ -158,6 +158,66 @@ fixed width font:
   - Item 3
 - The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
 
+# Layout
+
+## Two columns
+
+:::: {.columns}
+
+::: {.column width="40%"}
+### Left column
+
+- Item 1
+- Item 2
+- Item 3
+- The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+:::
+
+::: {.column width="60%"}
+### Right column
+
+- Item 1
+- Item 2
+- Item 3
+- The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+:::
+
+::::
+
+## Aside
+
+Slide content
+
+::: aside
+Some additional commentary of more peripheral interest.
+:::
+
+## Aside and footnote
+
+- Green ^[A footnote]
+- Brown
+- Purple
+
+::: aside
+Some additional commentary of more peripheral interest.
+:::
+
+## Tabset
+
+::: {.panel-tabset}
+
+### Tab A
+
+Content for `Tab A`
+
+### Tab B
+
+Content for `Tab B`
+
+:::
+
 # Static tables and figures
 
 ## Manual table
