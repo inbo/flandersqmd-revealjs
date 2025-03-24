@@ -8,7 +8,7 @@ project:
     - "*.qmd"
     - "!LICENSE.md" #ignore LICENSE.md
     - "!README.md" #ignore README.md
-  output-dir: output
+  output-dir: ../output
 
 lang: en-GB
 #lang: nl-BE
@@ -21,7 +21,7 @@ flandersqmd:
   title: "Example presentation using flandersqmd-revealjs"
   subtitle: "Optional subtitle"
   date: 2025-03-14
-  cover: pexels-pixabay-355887.jpg #Photo by Pixabay: https://www.pexels.com/photo/plants-under-starry-sky-355887/
+  cover: media/pexels-pixabay-355887.jpg #Photo by Pixabay: https://www.pexels.com/photo/plants-under-starry-sky-355887/
   author:
     - name:
         given: Given
