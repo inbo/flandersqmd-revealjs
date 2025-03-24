@@ -53,11 +53,3 @@ format:
 execute:
   cache: false
   freeze: false
-
-knitr:
-  opts_chunk:
-    echo: false
-    message: false
-    warning: false
-    fig-height: 5.7
-    fig-width: 12

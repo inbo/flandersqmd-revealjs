@@ -2,6 +2,13 @@ title: Reveal.js quarto extension with corporate identity of the Flemish governm
 author: Thierry Onkelinx
 version: 0.0.1
 contributes:
+  knitr:
+    opts_chunk:
+      echo: false
+      message: false
+      warning: false
+      fig-height: 5.7
+      fig-width: 12
   formats:
     revealjs:
       theme: [default, slides.scss]
