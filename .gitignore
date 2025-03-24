@@ -19,11 +19,3 @@ docs
 libs
 output
 renv/library
-/.quarto/
-/*.csl
-/*.css
-/*.html
-/*.jpg
-/*.png
-/*.scss
-/*.ttf
