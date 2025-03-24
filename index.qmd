@@ -8,9 +8,9 @@ library(lipsum)
 library(plotly)
 ```
 
-# Separator slide heading 1 extra text a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9
+# Separator slide heading 1 extra text a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 <!-- spell-check: ignore -->
 
-## Slide title extra text a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 
+## Slide title extra text a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 <!-- spell-check: ignore -->
 
 - The text box will automatically shrink when the slide title requires more lines
 - The text is vertically centred within the text box
@@ -145,7 +145,7 @@ fixed width font:
     - The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
 :::
 
-## List with pauze
+## List with pause
 
 - First level
 
@@ -186,24 +186,24 @@ fixed width font:
 
 ::::
 
-## Callout
+## Call-out
 
 ::: {.callout-note}
-Note that there are five types of callouts, including:
+Note that there are five types of call-outs, including:
 `note`, `warning`, `important`, `tip`, and `caution`.
 :::
 
 ::: {.callout-tip}
 ## Tip with Title
 
-This is an example of a callout with a title.
+This is an example of a call-out with a title.
 :::
 
 ::: {.callout-caution}
 The quick brown fox jumps over the lazy dog.
 :::
 
-## Callout
+## Call-out
 
 ::: {.callout-warning}
 The quick brown fox jumps over the lazy dog.
@@ -231,7 +231,7 @@ Some additional commentary of more peripheral interest.
 Some additional commentary of more peripheral interest.
 :::
 
-## Tabset
+## Slides with tabs
 
 ::: {.panel-tabset}
 
@@ -249,7 +249,7 @@ Content for `Tab B`
 
 ## Manual table
 
-| Default | Left | Right | Center |
+| Default | Left | Right | Centre |
 |---------|:-----|------:|:------:|
 | 12      | 12   |    12 |   12   |
 | 123     | 123  |   123 |  123   |
@@ -324,7 +324,7 @@ datatable(
 ggplotly(ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point())
 ```
 
-## Plotly figure and transition {transition="none"}
+## `plotly` figure and transition {transition="none"}
 
 - The `revealjs` interacts with `plotly` figures by rescaling them when going back and forth between slides
 - Options to fix that

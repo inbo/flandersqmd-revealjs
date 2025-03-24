@@ -1,4 +1,5 @@
 project:
+  type: default
   preview:
     port: 4201
     browser: true

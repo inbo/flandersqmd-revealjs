@@ -4,7 +4,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/inbo/flandersqmd-revealjs)
 <!-- badges: end -->
 
-# Reveal.js quarto extension with the corporate identity of the Flemish government
+# `Reveal.js` quarto extension with the corporate identity of the Flemish government
 
 [Onkelinx, Thierry![ORCID logo](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0001-8804-4216)[^aut][^cre][^inbo.be]
 Research Institute for Nature and Forest (INBO)[^cph][^fnd]
@@ -15,7 +15,7 @@ Research Institute for Nature and Forest (INBO)[^cph][^fnd]
 [^cre]: contact person
 [^inbo.be]: Research Institute for Nature and Forest (INBO)
 
-**keywords**: quarto; reveal.js; corporate identity
+**keywords**: quarto; reveal; corporate identity
 
 <!-- community: inbo -->
 
