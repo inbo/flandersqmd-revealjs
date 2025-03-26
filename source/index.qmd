@@ -284,7 +284,7 @@ kable(head(mtcars[, 1:4], 3), align = c("r", "c", "r", "l"))
 
 ## Manual figure
 
-![Figure caption](pexels-pixabay-355887.jpg){height=80%}
+![Figure caption](media/pexels-pixabay-355887.jpg){height=80%}
 
 ## Static figure from R
 
