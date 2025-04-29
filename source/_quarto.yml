@@ -20,7 +20,8 @@ flandersqmd:
   title: "Example presentation using flandersqmd-revealjs"
   subtitle: "Optional subtitle"
   date: 2025-03-14
-  cover: media/pexels-pixabay-355887.jpg #Photo by Pixabay: https://www.pexels.com/photo/plants-under-starry-sky-355887/
+  cover: media/pexels-pixabay-355887.jpg
+  photographer: Photo by [Pixabay](https://www.pexels.com/photo/plants-under-starry-sky-355887/)
   author:
     - name:
         given: Given

@@ -169,6 +169,13 @@ $font-family-monospace: inconsolata, SFMono-Regular, Menlo, Monaco, Consolas, Li
   z-index: -1;
 }
 
+.photographer {
+  font-size: 0.5em;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
 .sidebar {
   position: fixed;
   left: -70px;
