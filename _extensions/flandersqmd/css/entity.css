@@ -30,10 +30,6 @@
   color: var(--flandersqmd-sidebar-tussen-colour);
 }
 
-.title-logo {
-  background-color: var(--flandersqmd-title-border);
-}
-
 .title-entity {
   color: var(--flandersqmd-title-border);
 }

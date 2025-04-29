@@ -12,7 +12,7 @@ function entity_en(entity, level)
     if is_empty(level) or tonumber(pandoc.utils.stringify(level)) < 2 then
       result.entity_title_logo = "inbo-en-black.jpg"
     else
-      result.entity_title_logo = "inbo-en-title.png"
+      result.entity_title_logo = "inbo-en-white.png"
     end
   else
     result = {
@@ -38,8 +38,8 @@ function entity_nl(entity, level)
       result.entity_title_logo = "inbo-nl-black.png"
       result.title_logo_style = "max-width: 245px;"
     else
-      result.flanders_title_logo = "flanders-nl-title.png"
-      result.entity_title_logo = "inbo-nl-title.png"
+      result.flanders_title_logo = "flanders-nl-transparent.png"
+      result.entity_title_logo = "inbo-nl-white.png"
       result.title_logo_style = "max-width: 250px;"
     end
   else
