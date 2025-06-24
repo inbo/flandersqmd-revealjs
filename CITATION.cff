@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using these metadata.
+title: "`Reveal.js` quarto extension with the corporate identity of the Flemish government"
+authors:
+- given-names: Thierry
+  family-names: Onkelinx
+  affiliation: Research Institute for Nature and Forest (INBO)
+  orcid: 0000-0001-8804-4216
+keywords:
+- quarto
+- reveal
+- corporate identity
+contact:
+- given-names: Thierry
+  family-names: Onkelinx
+  affiliation: Research Institute for Nature and Forest (INBO)
+  orcid: 0000-0001-8804-4216
+doi: ~
+license: CC-BY-4.0
+repository-code: https://github.com/inbo/flandersqmd-revealjs/
+type: software
+abstract: "This quarto extension builds on the quarto [`revealjs` format](https://quarto.org/docs/presentations/revealjs/)
+  and provides the corporate identity of the Flemish government for slides.\nA full
+  example is available on the [GitHub repo](https://github.io/inbo/flandersqmd-revealjs/)."

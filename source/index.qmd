@@ -1,0 +1,396 @@
+```{r setup, include = FALSE}
+library(DT)
+library(ggplot2)
+library(INBOtheme)
+library(knitr)
+library(leaflet)
+library(lipsum)
+library(plotly)
+```
+
+# Separator slide heading 1 extra text a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 <!-- spell-check: ignore -->
+
+## Slide title extra text a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 <!-- spell-check: ignore -->
+
+- The text box will automatically shrink when the slide title requires more lines
+- The text is vertically centred within the text box
+- In case the title of heading 1 is too long, the first part of the title will disappear
+
+## Slide with too much text
+
+- The last part of the text will disappear if it doesn't fit the slide
+- The font size will not shrink to fit the text (like PowerPoint does)
+
+`r paragraph(1:2)`
+
+# Fonts 
+
+## Normal font
+
+`r paragraph()`
+
+## Italic font
+
+_`r paragraph()`_
+
+## Bold font
+
+**`r paragraph()`**
+
+## Bold and italic font
+
+**_`r paragraph()`_**
+
+## Fixed width font
+
+```{r fixed-width, echo = FALSE, results = "asis"}
+cat("`", paragraph(), "`", sep = "")
+```
+
+## Available number of characters per line
+
+About 69 characters with normal font
+
+12345678911234567892123456789312345678941234567895123456789612345678971234567898
+
+_12345678911234567892123456789312345678941234567895123456789612345678971234567898_
+
+About 62 characters with bold font
+
+**12345678911234567892123456789312345678941234567895123456789612345678971234567898**
+
+**_12345678911234567892123456789312345678941234567895123456789612345678971234567898_**
+
+62 characters with fixed width font
+
+`12345678911234567892123456789312345678941234567895123456789612345678971234567898`
+
+## Minuscule L versus capital i
+
+normal:
+  ~ lI <!-- spell-check: ignore -->
+
+bold:
+  ~ **lI** <!-- spell-check: ignore -->
+  
+italics:
+  ~ _lI_ <!-- spell-check: ignore -->
+  
+bold italics:
+  ~ **_lI_** <!-- spell-check: ignore -->
+
+fixed width font:
+  ~ `lI` <!-- spell-check: ignore -->
+
+## Special characters
+
+€$£ @&#§µ^ ()[]{}|²³<>/\*+- ,;:.?!~ äàáâã ëèéê ïìíî öòóô üùúû ÿ ç ñ ÄÀÁÂ ËÈÉÊ ÏÌÍÎ ÖÒÓÔ ÜÙÚÛ Ñ 0123456789 <!-- spell-check: ignore -->
+
+_€$£ @&#§µ^ ()[]{}|²³<>/\*+- ,;:.?!~ äàáâã ëèéê ïìíî öòóô üùúû ÿ ç ñ ÄÀÁÂ ËÈÉÊ ÏÌÍÎ ÖÒÓÔ ÜÙÚÛ Ñ 0123456789_ <!-- spell-check: ignore -->
+
+**€$£ @&#§µ^ ()[]{}|²³<>/\*+- ,;:.?!~ äàáâã ëèéê ïìíî öòóô üùúû ÿ ç ñ ÄÀÁÂ ËÈÉÊ ÏÌÍÎ ÖÒÓÔ ÜÙÚÛ Ñ 0123456789** <!-- spell-check: ignore -->
+
+**_€$£ @&#§µ^ ()[]{}|²³<>/\*+- ,;:.?!~ äàáâã ëèéê ïìíî öòóô üùúû ÿ ç ñ ÄÀÁÂ ËÈÉÊ ÏÌÍÎ ÖÒÓÔ ÜÙÚÛ Ñ 0123456789_** <!-- spell-check: ignore -->
+
+`€$£ @&#§µ^ ()[]{}|²³<>/\*+- ,;:.?!~ äàáâã ëèéê ïìíî öòóô üùúû ÿ ç ñ ÄÀÁÂ ËÈÉÊ ÏÌÍÎ ÖÒÓÔ ÜÙÚÛ Ñ 0123456789` <!-- spell-check: ignore -->
+
+## Quotation marks
+
+normal:
+  ~ "double", 'single'
+
+bold:
+  ~ **"double", 'single'**
+
+italics:
+  ~ _"double", 'single'_
+
+bold italics:
+  ~ **_"double", 'single'_**
+
+fixed width font:
+  ~ `"double", 'single',`
+
+# Lists
+
+## Unordered list
+
+- First level
+- The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+- Item 3
+    - Second level
+        - Third level
+        - The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+    - The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+
+## Ordered list
+
+1. First level
+1. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+1. Item 3
+    1. Second level
+        1. Third level
+        1. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+    1. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+## Incremental list
+
+::: {.incremental}
+- First level
+- The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+- Item 3
+    - Second level
+        - Third level
+        - The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+    - The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. 
+:::
+
+## List with pause
+
+- First level
+
+. . .
+
+- The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+. . .
+
+  - Item 3
+- The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+# Layout
+
+## Two columns
+
+:::: {.columns}
+
+::: {.column width="40%"}
+### Left column
+
+- Item 1
+- Item 2
+- Item 3
+- The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+:::
+
+::: {.column width="60%"}
+### Right column
+
+- Item 1
+- Item 2
+- Item 3
+- The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+:::
+
+::::
+
+## Call-out
+
+::: {.callout-note}
+Note that there are five types of call-outs, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+::: {.callout-tip}
+## Tip with Title
+
+This is an example of a call-out with a title.
+:::
+
+::: {.callout-caution}
+The quick brown fox jumps over the lazy dog.
+:::
+
+## Call-out
+
+::: {.callout-warning}
+The quick brown fox jumps over the lazy dog.
+:::
+
+::: {.callout-important}
+The quick brown fox jumps over the lazy dog.
+:::
+
+## Aside
+
+Slide content
+
+::: aside
+Some additional commentary of more peripheral interest.
+:::
+
+## Aside and footnote
+
+- Green ^[A footnote]
+- Brown
+- Purple
+
+::: aside
+Some additional commentary of more peripheral interest.
+:::
+
+## Slides with tabs
+
+::: {.panel-tabset}
+
+### Tab A
+
+Content for `Tab A`
+
+### Tab B
+
+Content for `Tab B`
+
+:::
+
+# Static tables and figures
+
+## Manual table
+
+| Default | Left | Right | Centre |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+: Optional table caption
+
+## Static table from R data frame
+
+```{r mtcars}
+kable(head(mtcars[, 1:4], 7), align = c("r", "c", "r", "l"))
+```
+
+## Static table from R data frame with numbered caption
+
+- chunk name must have `tbl-` prefix 
+- use `tbl-cap:` to specify the table caption
+
+```{r tbl-mtcars}
+#| tbl-cap: Optional table caption
+kable(head(mtcars[, 1:4], 3), align = c("r", "c", "r", "l"))
+```
+
+## Static table from R data frame with unnumbered caption
+
+- use `tbl-cap:` to specify the table caption
+
+```{r}
+#| tbl-cap: Optional table caption
+kable(head(mtcars[, 1:4], 3), align = c("r", "c", "r", "l"))
+```
+
+## Manual figure
+
+![Figure caption](media/pexels-pixabay-355887.jpg){height=80%}
+
+## Static figure from R
+
+```{r}
+ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
+```
+
+## Static figure from R with caption
+
+```{r}
+#| fig-cap: Optional figure caption
+ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
+```
+
+## Static figure from R with caption
+
+```{r fig-mtcars}
+#| fig-cap: Optional figure caption
+ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point()
+```
+
+# Interactive tables and figures
+
+## Interactive table {transition="none"}
+
+```{r dt}
+datatable(
+  mtcars[, 1:6], caption = "Optional table caption",
+  options = list(pageLength = 5, dom = "ftp")
+)
+```
+
+## Interactive figure {transition="none"}
+
+```{r fig-plotly}
+#| fig-cap: Optional figure caption
+ggplotly(ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point())
+```
+
+## `plotly` figure and transition {transition="none"}
+
+- The `revealjs` interacts with `plotly` figures by rescaling them when going back and forth between slides
+- Options to fix that
+    1. Workaround: refresh the page (F5) to display the `plotly` figure in the correct size
+    1. Use the `transition="none"` option to `plolty` slide and the slide before and after
+    1. Set `transition: none` as default transition in `_quarto.yml`
+    
+```
+format:
+  flandersqmd-revealjs:
+    transition: none
+```
+
+## Interactive map
+
+```{r fig-leaflet}
+#| fig-cap: Optional caption
+leaflet() |>
+  addTiles() |>
+  setView(lng = 3.8804, lat = 50.7635, zoom = 18)
+```
+
+
+# Mathematical formulas
+
+## In-line formulas
+
+In-line formulas are intermixed with normal text, e.g. $P(y < Y|\theta) = \alpha$. This works best with simple formulas. Taller formulas will be reformatted to match the line height of the text, e.g. $\bar{X} = \sum_{i = 1}^NX_i$. Here, $i = 1$ and $N$ are placed besides $\sum$ instead of below and above. That trick doesn't hold with all formulas, e.g. fractions $\frac{X}{Y}$. In such case the font size is shrunk. Really tall formulas like $\frac{\sum_{i = 1}^NX_i}{\frac{\sum_{j = 1}^NY_j}{N}}$ will require an increased interline distance. Stand-alone formulas are therefore advisable.
+
+## Stand-alone formulas
+
+$$P(y < Y|\theta) = \alpha$$
+
+$$\bar{X} = \sum_{i = 1}^NX_i$$
+
+$$\frac{X}{Y}$$
+
+$$\frac{\sum_{i = 1}^NX_i}{\frac{\sum_{j = 1}^NY_i}{N}}$$
+
+## Numbered formulas
+
+<!-- spell-check: ignore:start -->
+$$\bar{X} = \sum_{i = 1}^NX_i $$ {#eq-som0}
+
+$$\frac{X}{Y} $$ {#eq-som}
+
+$$\frac{\sum_{i = 1}^NX_i}{\frac{\sum_{j = 1}^NY_j}{N}} $$ {#eq-som1}
+<!-- spell-check: ignore:end -->
+
+# Citations
+
+## In-line styles
+
+- author (year): @BlauwdrukVleermuizen
+- (author, year): [@BlauwdrukVleermuizen]
+- (prefix author, year suffix): [see @BlauwdrukVleermuizen, chapter 1]
+- (multiple citations to the same authors): [@BlauwdrukVleermuizen; @Onkelinx2014a]
+- (multiple citations to different authors): [@BlauwdrukVleermuizen; @Agresti2002]
+
+## Types of references
+
+- book: [@Agresti2002; @DiggleRibeiro2007; @ZuurEtal2009; @Bolker2008; @Kish_1965; @BanerjeeEtal2003; @franklin_mapping_2009]
+- chapter: [@Degraer2013a; @BlauwdrukVogels; @BlauwdrukVleermuizen]
+- proceedings: [@Onkelinx2014a; @Onkelinx2012]
+- articles: [@Amano2012; @VanderMijnsbrugge2005; @R-reshape; @Yli-Viikari2007]
+- thesis: [@MaStatThesis]
+- software: [@R-3.0.1]
+
+## References

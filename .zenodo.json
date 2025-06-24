@@ -1,0 +1,37 @@
+{
+  "access_right": "open",
+  "title": "`Reveal.js` quarto extension with the corporate identity of the Flemish government",
+  "description": "<p>This quarto extension builds on the quarto <a href=\"https://quarto.org/docs/presentations/revealjs/\"><code>revealjs<\/code> format<\/a> and provides the corporate identity of the Flemish government for slides. A full example is available on the <a href=\"https://github.io/inbo/flandersqmd-revealjs/\">GitHub repo<\/a>.<\/p>",
+  "keywords": [
+    "quarto",
+    "reveal",
+    "corporate identity"
+  ],
+  "upload_type": "software",
+  "license": "CC-BY-4.0",
+  "language": "eng",
+  "contributors": [
+    {
+      "name": "Onkelinx, Thierry",
+      "affiliation": "Research Institute for Nature and Forest (INBO)",
+      "orcid": "0000-0001-8804-4216",
+      "type": "contactperson"
+    },
+    {
+      "name": "Research Institute for Nature and Forest (INBO)",
+      "type": "rightsholder"
+    }
+  ],
+  "creators": [
+    {
+      "name": "Onkelinx, Thierry",
+      "affiliation": "Research Institute for Nature and Forest (INBO)",
+      "orcid": "0000-0001-8804-4216"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "inbo"
+    }
+  ]
+}
