@@ -30,7 +30,7 @@ function Header(elem)
         ent_logo = pandoc.Image("Instituut voor Natuur- en Bosonderzoek", "inbo-en-white.png")
         ent_logo.attr = {class = "entity-tussen-vert"}
       end
-      vl_logo = pandoc.Image("Flanders, states of the art", "flanders-en-intermediate.png")
+      vl_logo = pandoc.Image("Flanders, state of the art", "flanders-en-intermediate.png")
       vl_logo.attr = {class = "vl-tussen-vert"}
     end
     return {

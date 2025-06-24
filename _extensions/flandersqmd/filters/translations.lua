@@ -7,7 +7,7 @@ function entity_en(entity, level)
   if (entity == "INBO") then
     result = {
       url = "https://www.vlaanderen.be/inbo/en",
-      entity_name = "Research Insitutite for Nature and Forest (INBO)",
+      entity_name = "Research Institute for Nature and Forest (INBO)",
     }
     if is_empty(level) or tonumber(pandoc.utils.stringify(level)) < 2 then
       result.entity_title_logo = "inbo-en-black.jpg"

@@ -111,18 +111,17 @@ Missing settings are replaced by `!!! missing flandersqmd.settingname !!!` in th
 You can render your quarto presentation in two main ways:  
 
 1. **Using RStudio's Build Pane**  
-   - Open your quarto book project in RStudio.
+   - Open your quarto project in RStudio.
    - Click on the **Build** tab (usually found in the top-right panel).  
-   - Click **Render Book** to generate all formats.
-     You can click on the down arrow next to the **Render Book** button to render only a specific format.
+   - Click **Render Project** to generate the html presentation.
      If no `flandersqmd-revealjs` format is available, restart your quarto book project and try again.
-   - The output format is saved to disk.
+   - The presentation is saved to disk.
 
 2. **Using the Terminal**  
    - Open a terminal and navigate to the folder of your quarto presentation
    - Run the commands below in the terminal.
-     This renders the book and saves it to disk like the **Render Book** button of the **Build** tab.
-     Preview renders the book and starts a live preview, automatically updating the output when changes are detected.
+     This renders the presentation and saves it to disk like the **Render Project** button of the **Build** tab.
+     Preview renders the presentation and starts a live preview, automatically updating the output when changes are detected.
 
 ```sh
 # render the presentation
