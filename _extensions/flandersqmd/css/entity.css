@@ -2,15 +2,15 @@
   background: var(--flandersqmd-level1-trapezium);
 }
 
-.reveal h1 {
+.reveal h1, .reveal h1 code {
   color: var(--flandersqmd-level1-colour);
 }
 
-.reveal h2 {
+.reveal h2, .reveal h2 code {
   color: var(--flandersqmd-level2-colour);
 }
 
-.reveal .title {
+.reveal .title, .reveal .title code {
   color: var(--flandersqmd-title-colour);
 }
 
