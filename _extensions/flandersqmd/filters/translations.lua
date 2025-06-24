@@ -175,6 +175,8 @@ function levelcss (entity)
   css = css .. '  --flandersqmd-title-colour: var(--flanders-white);\n'
   css = css .. '  --flandersqmd-title-border: var(--flanders-white);\n'
   css = css .. '  --flandersqmd-level1-bg: var(--flanders-white);\n'
+  css = css .. '  --r-main-font: flanders_art_sanslight, Calibri, Source Sans Pro, Helvetica, sans-serif;\n'
+  css = css .. '  --r-heading-font-weight: 400;\n'
   css = css .. '}\n'
   return css
 end
